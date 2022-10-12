@@ -1,0 +1,22 @@
+GET http://127.0.0.1:8080
+
+###
+POST http://127.0.0.1:8080
+Content-Type: application/json
+
+{
+  "task": "This is from POST method!",
+  "description": "This is from POST method! A short description in 255 characters.",
+  "status": 1
+}
+
+###
+PUT http://127.0.0.1:8080?_id=6346f2a1dbbfa702c48904e9
+Content-Type: application/json
+
+{
+  "task": "This is from PUT method!"
+}
+
+###
+DELETE http://127.0.0.1:8080?_id=6346f2a1dbbfa702c48904e9
